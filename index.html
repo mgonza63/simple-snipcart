@@ -14,11 +14,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="content">
+    <header class="header">
         <h1>Hello this is the simplest way to add a Shopping Cart</h1>
+    </header>
+
+    <div class="products">
+        <div class="product">
+            <div class="product-info">
+                <h2>Vintage Camera</h2>
+                <img src="./img/camera.jpg" alt="Vintage Camera">
+            </div>
+        </div>
     </div>
 
-    <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+    <button class="snipcart-add-item"
+        data-item-id="Vintage Camera 1"
+        data-item-price="79.99"
+        data-item-url="/camera/vintage-camera"
+        data-item-description="A really cool Camera"
+        data-item-image="./img/camera.jpg"
+        data-item-name="Vintage Camera">
+        Add to cart
+    </button>
+
+    <div hidden id="snipcart" data-api-key="ZTJkY2JkN2MtNDBiYi00MjdhLTk0MzQtMmUwODI3ZWRhZTdmNjM3MjQwMDUwNjA4OTExOTE1"></div>
     <script src="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js"></script>
 </body>
 </html>
